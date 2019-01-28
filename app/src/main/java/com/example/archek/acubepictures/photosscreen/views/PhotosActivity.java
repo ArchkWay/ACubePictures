@@ -66,7 +66,6 @@ public class PhotosActivity extends AppCompatActivity implements PhotosContract.
         /*if destroy - detach view*/
         super.onDestroy();
         presenter.detachView();
-        adapter.clearAll();
     }
 
     @Override
