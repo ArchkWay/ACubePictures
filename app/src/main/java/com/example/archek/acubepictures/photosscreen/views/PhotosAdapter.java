@@ -1,11 +1,8 @@
 package com.example.archek.acubepictures.photosscreen.views;
 
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.LruCache;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +12,6 @@ import android.widget.TextView;
 import com.example.archek.acubepictures.R;
 import com.example.archek.acubepictures.utils.pojos.Photo;
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,20 +52,10 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
     } //count all items
 
 
-    public void replaceAll(List <Photo> collectPhotos) {//load all mocks in main list
+    public void replaceAll(List <Photo> collectPhotos) {//load all photos in main list
         photos.clear();
         photos.addAll(collectPhotos);
-//        sortById();
-        notifyDataSetChanged();
-    }
-    public void addAll(List <Photo> collectPhotos) {//load all mocks in main list
-        photos.addAll(collectPhotos);
-//        sortById();
-        notifyDataSetChanged();
-    }
 
-    public void clearAll() {//clear all mocks in main list
-        photos.clear();
         notifyDataSetChanged();
     }
 
