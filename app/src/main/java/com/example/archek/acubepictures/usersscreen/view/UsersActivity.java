@@ -31,6 +31,8 @@ public class UsersActivity extends AppCompatActivity implements UsersContract.vi
         setContentView(R.layout.activity_main);
         init();
         Log.d("D", "sd");
+        Log.d("D", "sd");
+        Log.d("D", "sd");
     }
     private void init(){
         /*get recyclerview parts, usersPresenter and data objects from it*/
