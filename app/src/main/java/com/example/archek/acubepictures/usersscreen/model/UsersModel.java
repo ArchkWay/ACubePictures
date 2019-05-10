@@ -32,5 +32,4 @@ public class UsersModel implements UsersContract.model{
     public Observable<List <User>> getUsers() {
         return api.getUsers().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
     }
-
 }
